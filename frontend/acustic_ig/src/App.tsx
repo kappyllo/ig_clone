@@ -1,7 +1,15 @@
+import Posts from "./components/Posts";
+import RightSideBar from "./components/RightBar";
+import Storys from "./components/Storys";
+import LeftSideBar from "./components/leftSidebar";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <LeftSideBar />
+      <Storys />
+      <Posts />
+      <RightSideBar />
     </>
   );
 }
