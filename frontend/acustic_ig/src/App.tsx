@@ -5,14 +5,12 @@ import LeftSideBar from "./components/LeftSidebar";
 
 function App() {
   return (
-    <>
-      <div className="flex justify-around">
-        <LeftSideBar />
-        <Storys />
-        <Posts />
-        <RightSideBar />
-      </div>
-    </>
+    <div className="flex justify-around">
+      <LeftSideBar />
+      <Storys />
+      <Posts />
+      <RightSideBar />
+    </div>
   );
 }
 
