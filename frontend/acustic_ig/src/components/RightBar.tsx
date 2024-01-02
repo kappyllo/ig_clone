@@ -5,30 +5,30 @@ export default function RightSideBar() {
     <>
       <div>
         <div>
-          <p>
+          <div>
             <img src="" alt="" />
             <p>{LOGGED_ACOUNT}</p>
             <p>{ACOUNT_DESC}</p>
-          </p>
+          </div>
           <button>Przęłącz</button>
         </div>
         <div>
           <p>Propozycje dla Ciebie</p>
-          <p>
+          <div>
             <img src="" alt="" />
             <p>{LOGGED_ACOUNT}</p>
             <p>{ACOUNT_DESC}</p>
-          </p>
-          <p>
+          </div>
+          <div>
             <img src="" alt="" />
             <p>{LOGGED_ACOUNT}</p>
             <p>{ACOUNT_DESC}</p>
-          </p>
-          <p>
+          </div>
+          <div>
             <img src="" alt="" />
             <p>{LOGGED_ACOUNT}</p>
             <p>{ACOUNT_DESC}</p>
-          </p>
+          </div>
         </div>
       </div>
     </>

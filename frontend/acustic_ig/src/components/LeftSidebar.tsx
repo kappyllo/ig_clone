@@ -1,6 +1,6 @@
 export default function LeftSideBar() {
   return (
-    <>
+    <div>
       <h1>Acusgram</h1>
       <div>
         <ul>
@@ -20,6 +20,6 @@ export default function LeftSideBar() {
           <li>Więcej</li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }

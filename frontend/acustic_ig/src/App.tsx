@@ -1,15 +1,17 @@
 import Posts from "./components/Posts";
 import RightSideBar from "./components/RightBar";
 import Storys from "./components/Storys";
-import LeftSideBar from "./components/leftSidebar";
+import LeftSideBar from "./components/LeftSidebar";
 
 function App() {
   return (
     <>
-      <LeftSideBar />
-      <Storys />
-      <Posts />
-      <RightSideBar />
+      <div className="flex justify-around">
+        <LeftSideBar />
+        <Storys />
+        <Posts />
+        <RightSideBar />
+      </div>
     </>
   );
 }
