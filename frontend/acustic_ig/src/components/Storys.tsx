@@ -1,35 +1,67 @@
 const STORYS_THAT_SOMEDAY_WILL_BE_DYNAMIC = (
-  <ul>
+  <ul className="flex flex-row mx-10 text-sm ">
     <li>
-      <img src="" alt="" />
+      <img
+        className="w-12 rounded-full"
+        src="../../public/cat-story.jpeg"
+        alt=""
+      />
       <p>Kacper</p>
     </li>
     <li>
-      <img src="" alt="" />
+      <img
+        className="w-12 rounded-full"
+        src="../../public/cat-story.jpeg"
+        alt=""
+      />
       <p>Marek</p>
     </li>
     <li>
-      <img src="" alt="" />
+      <img
+        className="w-12 rounded-full"
+        src="../../public/cat-story.jpeg"
+        alt=""
+      />
       <p>Samochodzik</p>
     </li>
     <li>
-      <img src="" alt="" />
+      <img
+        className="w-12 rounded-full"
+        src="../../public/cat-story.jpeg"
+        alt=""
+      />
       <p>Zabawne_Koty</p>
     </li>
     <li>
-      <img src="" alt="" />
+      <img
+        className="w-12 rounded-full"
+        src="../../public/cat-story.jpeg"
+        alt=""
+      />
       <p>tururu</p>
     </li>
     <li>
-      <img src="" alt="" />
+      <img
+        className="w-12 rounded-full"
+        src="../../public/cat-story.jpeg"
+        alt=""
+      />
       <p>cing_ciong</p>
     </li>
     <li>
-      <img src="" alt="" />
+      <img
+        className="w-12 rounded-full"
+        src="../../public/cat-story.jpeg"
+        alt=""
+      />
       <p>minecraft_blow</p>
     </li>
     <li>
-      <img src="" alt="" />
+      <img
+        className="w-12 rounded-full"
+        src="../../public/cat-story.jpeg"
+        alt=""
+      />
       <p>masterczulek</p>
     </li>
   </ul>
