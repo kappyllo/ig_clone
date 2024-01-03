@@ -9,11 +9,27 @@ const EXAMPLE_POSTS = [
     comments: { count: 1, comms: ["test"] },
     photo: "src/imgs/post_img.jpg",
   },
+  {
+    op: { nickName: "Kacper", img: "cat-story.jpeg" },
+    postTime: "12 godz.",
+    description: "ciekawy opis",
+    likes: 2,
+    comments: { count: 1, comms: ["test"] },
+    photo: "src/imgs/post_img.jpg",
+  },
+  {
+    op: { nickName: "Kacper", img: "cat-story.jpeg" },
+    postTime: "12 godz.",
+    description: "ciekawy opis",
+    likes: 2,
+    comments: { count: 1, comms: ["test"] },
+    photo: "src/imgs/post_img.jpg",
+  },
 ];
 
 export default function Posts() {
   return (
-    <>
+    <div className="mx-auto">
       {EXAMPLE_POSTS.map((post) => {
         return (
           <MainPagePost
@@ -26,6 +42,6 @@ export default function Posts() {
           />
         );
       })}
-    </>
+    </div>
   );
 }

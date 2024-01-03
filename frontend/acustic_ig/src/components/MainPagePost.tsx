@@ -16,7 +16,7 @@ export default function MainPagePost({
   comments,
 }: Props) {
   return (
-    <div>
+    <div className="mb-5">
       <div className="flex mb-2">
         <img className="rounded-full w-9    " src={op.img} alt="" />
         <p>{op.nickName}</p>
@@ -29,7 +29,7 @@ export default function MainPagePost({
         <p>
           {op.nickName} {description}
         </p>
-        <p>Zobacz wszystkie komentarze: {comments.count}</p>
+        <button>Zobacz wszystkie komentarze: {comments.count}</button>
       </div>
     </div>
   );
