@@ -9,6 +9,8 @@ function App() {
       <LeftSideBar />
       <div className="flex justify-center ">
         <Storys />
+      </div>
+      <div className="flex">
         <RightSideBar />
       </div>
       <div className="flex">
