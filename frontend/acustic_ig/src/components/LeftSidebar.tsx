@@ -1,6 +1,6 @@
 export default function LeftSideBar() {
   return (
-    <div className="mt-5">
+    <div className="mt-5 left-5 h-screen fixed">
       <h1>Acusgram</h1>
       <div>
         <ul>

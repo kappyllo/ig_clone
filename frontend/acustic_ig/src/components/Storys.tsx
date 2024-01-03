@@ -12,12 +12,6 @@ const EXAMPLE_STORIS = [
   { name: "user", img: "cat-story.jpeg" },
 ];
 
-// const STORYS_THAT_SOMEDAY_WILL_BE_DYNAMIC = (
-//   <ul className="flex flex-row  text-xs text-center mt-5 ">
-//     {/* <li className={LI_MARGIN}>
-//       <StoryBtn />
-//     </li> */}
-
 export default function Storys() {
   return (
     <>
