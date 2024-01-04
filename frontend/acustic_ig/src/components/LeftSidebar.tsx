@@ -1,41 +1,65 @@
 export default function LeftSideBar() {
   return (
-    <div className="mt-5 left-5 h-screen fixed">
-      <h1>Acusgram</h1>
-      <div>
-        <ul>
-          <li>
-            <button>Strona główna</button>
-          </li>
-          <li>
-            <button>Szukaj</button>
-          </li>
-          <li>
-            <button>Eksploruj</button>
-          </li>
-          <li>
-            <button>Rolki</button>
-          </li>
-          <li>
-            <button>Wiadomości</button>
-          </li>
-          <li>
-            <button>Powiadomienia</button>
-          </li>
-          <li>
-            <button>Utwórz</button>
-          </li>
-          <li>
-            <button>Profil</button>
-          </li>
-        </ul>
+    <>
+      <div className="mt-5 left-10   h-screen fixed">
+        <h1 className="mb-5">Acusgram</h1>
+        <div>
+          <ul>
+            <li className="mb-2">
+              <button>
+                <img src="home.svg" alt="" />
+                <p>Strona Główna</p>
+              </button>
+            </li>
+            <li className="mb-2">
+              <button>
+                <img src="search.svg" alt="" />
+                <p>Szukaj</p>
+              </button>
+            </li>
+            <li className="mb-2">
+              <button>
+                <img src="explore.svg" alt="" /> <p>Exploruj</p>
+              </button>
+            </li>
+            <li className="mb-2">
+              <button>
+                <img src="rolki.svg" alt="" />
+                <p>Rolki</p>
+              </button>
+            </li>
+            <li className="mb-2">
+              <button>
+                <img src="messages.svg" alt="" />
+                <p>Wiadomości</p>
+              </button>
+            </li>
+            <li className="mb-2">
+              <button>
+                <img src="blank-hearth.svg" alt="" />
+                <p>Powiadomienia</p>
+              </button>
+            </li>
+            <li className="mb-2">
+              <button>
+                <img src="create.svg" alt="" />
+                <p>Utwórz</p>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img
+                  className="rounded-full w-5 mr-2"
+                  src="cat-story.jpeg"
+                  alt=""
+                />
+                <p>Profil</p>
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul>
-          <li>Threads</li>
-          <li>Więcej</li>
-        </ul>
-      </div>
-    </div>
+      <div className="fixed ml-80  h-screen border-solid border-slate-700 border"></div>
+    </>
   );
 }

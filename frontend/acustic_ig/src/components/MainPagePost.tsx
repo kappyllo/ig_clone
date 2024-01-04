@@ -23,15 +23,16 @@ export default function MainPagePost({
         <p>{postTime}</p>
         <button className="ml-auto">...</button>
       </div>
-      <img src={photo} alt="" />
+      <img className="" src={photo} alt="" />
       <div>
-        <p className="font-medium">Liczba polubień: {likes}</p>
+        <p className="font-mediu">Liczba polubień: {likes}</p>
         <p>
-          <span className="font-medium">{op.nickName}</span>
+          <span className="font-medium">{op.nickName} </span>
           {description}
         </p>
         <button>Zobacz wszystkie komentarze: {comments.count}</button>
       </div>
+      <hr className="border-slate-800 mt-2" />
     </div>
   );
 }

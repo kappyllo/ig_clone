@@ -18,7 +18,7 @@ export default function Storys() {
       <ul className="flex flex-row  text-xs text-center mt-5 ">
         {EXAMPLE_STORIS.map((story) => {
           return (
-            <li className={LI_MARGIN}>
+            <li className={LI_MARGIN} key={story.name}>
               <StoryBtn nickName={story.name} img={story.img} />
             </li>
           );
