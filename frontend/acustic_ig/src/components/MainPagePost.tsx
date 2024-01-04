@@ -23,7 +23,7 @@ export default function MainPagePost({
         <p>{postTime}</p>
         <button className="ml-auto">...</button>
       </div>
-      <img src={photo} alt="" />
+      <img className="" src={photo} alt="" />
       <div>
         <p className="font-mediu">Liczba polubień: {likes}</p>
         <p>
