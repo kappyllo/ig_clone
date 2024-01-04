@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
-
 export default function LeftSideBar() {
   return (
     <div className="mt-5 left-10   h-screen fixed">
@@ -9,44 +6,55 @@ export default function LeftSideBar() {
         <ul>
           <li className="mb-2">
             <button>
-              <FontAwesomeIcon icon={faHouse} />
+              <img src="home.svg" alt="" />
               <p>Strona Główna</p>
             </button>
           </li>
           <li className="mb-2">
-            <button>Szukaj</button>
+            <button>
+              <img src="search.svg" alt="" />
+              <p>Szukaj</p>
+            </button>
           </li>
           <li className="mb-2">
-            <button>Eksploruj</button>
+            <button>
+              <img src="explore.svg" alt="" /> <p>Exploruj</p>
+            </button>
           </li>
           <li className="mb-2">
-            <button>Rolki</button>
+            <button>
+              <img src="rolki.svg" alt="" />
+              <p>Rolki</p>
+            </button>
           </li>
           <li className="mb-2">
-            <button>Wiadomości</button>
+            <button>
+              <img src="messages.svg" alt="" />
+              <p>Wiadomości</p>
+            </button>
           </li>
           <li className="mb-2">
-            <button>Powiadomienia</button>
+            <button>
+              <img src="blank-hearth.svg" alt="" />
+              <p>Powiadomienia</p>
+            </button>
           </li>
           <li className="mb-2">
-            <button>Utwórz</button>
+            <button>
+              <img src="create.svg" alt="" />
+              <p>Utwórz</p>
+            </button>
           </li>
           <li>
             <button>
               <img
-                className="rounded-full w-8 mr-2"
+                className="rounded-full w-5 mr-2"
                 src="cat-story.jpeg"
                 alt=""
               />
               <p>Profil</p>
             </button>
           </li>
-        </ul>
-      </div>
-      <div>
-        <ul className="">
-          <li>Threads</li>
-          <li>Więcej</li>
         </ul>
       </div>
     </div>
