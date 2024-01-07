@@ -1,53 +1,35 @@
+import LeftSideBarBtn from "../UI/LeftSideBarBtn";
+
 export default function LeftSideBar() {
   return (
     <>
       <div className="mt-5 left-10   h-screen fixed">
-        <h1 className="mb-5">Acusgram</h1>
+        <h1 className=" mb-16">Acusgram</h1>
         <div>
           <ul>
             <li className="mb-2">
-              <button>
-                <img src="home.svg" alt="" />
-                <p>Strona Główna</p>
-              </button>
+              <LeftSideBarBtn text="Strona główna" icon="home.svg" />
             </li>
             <li className="mb-2">
-              <button>
-                <img src="search.svg" alt="" />
-                <p>Szukaj</p>
-              </button>
+              <LeftSideBarBtn text="Szukaj" icon="search.svg" />
             </li>
             <li className="mb-2">
-              <button>
-                <img src="explore.svg" alt="" /> <p>Exploruj</p>
-              </button>
+              <LeftSideBarBtn text="Exploruj" icon="explore.svg" />
             </li>
             <li className="mb-2">
-              <button>
-                <img src="rolki.svg" alt="" />
-                <p>Rolki</p>
-              </button>
+              <LeftSideBarBtn text="Rolki" icon="rolki.svg" />
             </li>
             <li className="mb-2">
-              <button>
-                <img src="messages.svg" alt="" />
-                <p>Wiadomości</p>
-              </button>
+              <LeftSideBarBtn text="Wiadomości" icon="messages.svg" />
             </li>
             <li className="mb-2">
-              <button>
-                <img src="blank-hearth.svg" alt="" />
-                <p>Powiadomienia</p>
-              </button>
+              <LeftSideBarBtn text="Powiadomienia" icon="blank-hearth.svg" />
             </li>
             <li className="mb-2">
-              <button>
-                <img src="create.svg" alt="" />
-                <p>Utwórz</p>
-              </button>
+              <LeftSideBarBtn text="Utwórz" icon="create.svg" />
             </li>
             <li>
-              <button>
+              <button className="flex items-center">
                 <img
                   className="rounded-full w-5 mr-2"
                   src="cat-story.jpeg"
