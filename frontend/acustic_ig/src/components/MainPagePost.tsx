@@ -25,6 +25,14 @@ export default function MainPagePost({
       </div>
       <img className="" src={photo} alt="" />
       <div>
+        <div className="mt-3">
+          <button className="mr-3">
+            <img src="blank-hearth.svg" alt="" />
+          </button>
+          <button>
+            <img src="messages.svg" alt="" />
+          </button>
+        </div>
         <p className="font-mediu">Liczba polubień: {likes}</p>
         <p>
           <span className="font-medium">{op.nickName} </span>
