@@ -3,7 +3,7 @@ import LeftSideBarBtn from "../UI/LeftSideBarBtn";
 export default function LeftSideBar() {
   return (
     <>
-      <div className="mt-5 left-10   h-screen fixed">
+      <div className="mt-5 left-10 h-screen fixed xl:hidden">
         <h1 className=" mb-16">Acusgram</h1>
         <div>
           <ul>
@@ -41,7 +41,7 @@ export default function LeftSideBar() {
           </ul>
         </div>
       </div>
-      <div className="fixed ml-80  h-screen border-solid border-slate-700 border"></div>
+      <div className="fixed ml-80  h-screen border-solid border-slate-700 border xl:hidden"></div>
     </>
   );
 }
