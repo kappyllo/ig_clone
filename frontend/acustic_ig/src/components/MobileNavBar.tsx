@@ -29,3 +29,5 @@ export default function MobileNavBar() {
     </ul>
   );
 }
+
+// Do zrobienia
