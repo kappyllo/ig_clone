@@ -16,7 +16,7 @@ export default function MainPagePost({
   comments,
 }: Props) {
   return (
-    <div className="mb-5">
+    <div className="mb-5 xl:mt-6">
       <div className="flex mb-2 items-center">
         <img className="rounded-full w-8 mr-2" src={op.img} alt="" />
         <p className="mr-2 font-medium">{op.nickName}</p>

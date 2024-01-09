@@ -2,6 +2,7 @@ import Posts from "./components/Posts";
 import RightSideBar from "./components/RightBar";
 import Storys from "./components/Storys";
 import LeftSideBar from "./components/LeftSidebar";
+import MobileNavBar from "./components/MobileNavBar";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <div className="flex">
         <Posts />
       </div>
+      <MobileNavBar />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import StoryBtn from "../UI/StoryBtn";
+import { useRef } from "react";
 
 const LI_MARGIN = "mx-3";
 const EXAMPLE_STORIS = [
@@ -13,17 +14,23 @@ const EXAMPLE_STORIS = [
 ];
 
 export default function Storys() {
+  const windowSize = useRef([window.innerWidth, window.innerHeight]);
+  console.log(windowSize);
   return (
     <>
-      <ul className="flex flex-row  text-xs text-center mt-5 ">
-        {EXAMPLE_STORIS.map((story) => {
-          return (
-            <li className={LI_MARGIN} key={story.name}>
-              <StoryBtn nickName={story.name} img={story.img} />
-            </li>
-          );
-        })}
-      </ul>
+      {windowSize.current[0] < 1279 ? (
+        <ul className="flex flex-row  text-xs text-center mt-5 "></ul>
+      ) : (
+        <ul className="flex flex-row  text-xs text-center mt-5 ">
+          {EXAMPLE_STORIS.map((story) => {
+            return (
+              <li className={LI_MARGIN} key={story.name}>
+                <StoryBtn nickName={story.name} img={story.img} />
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </>
   );
 }

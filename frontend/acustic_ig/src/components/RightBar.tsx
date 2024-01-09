@@ -2,7 +2,7 @@ const LOGGED_ACOUNT = "admin";
 const ACOUNT_DESC = "opisik";
 export default function RightSideBar() {
   return (
-    <div className="ml-auto mr-20">
+    <div className="ml-auto mr-20 xl:hidden">
       <div className="flex justify-around items-center">
         <img src="cat-story.jpeg" className="rounded-full w-10 mr-2" alt="" />
         <div className="flex flex-col mr-20">

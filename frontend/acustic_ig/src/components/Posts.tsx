@@ -29,7 +29,7 @@ const EXAMPLE_POSTS = [
 
 export default function Posts() {
   return (
-    <div className="mx-auto">
+    <div className="flex flex-col justify-center mx-auto">
       {EXAMPLE_POSTS.map((post) => {
         return (
           <MainPagePost
