@@ -8,9 +8,9 @@ const EXAMPLE_STORIS = [
   { name: "Pan_Tusk", img: "cat-story.jpeg" },
   { name: "Zabaw...", img: "cat-story.jpeg" },
   { name: "tururu", img: "cat-story.jpeg" },
-  { name: "cing_cio...", img: "cat-story.jpeg" },
-  { name: "rezi", img: "cat-story.jpeg" },
-  { name: "user", img: "cat-story.jpeg" },
+  // { name: "cing_cio...", img: "cat-story.jpeg" },
+  // { name: "rezi", img: "cat-story.jpeg" },
+  // { name: "user", img: "cat-story.jpeg" },
 ];
 
 export default function Storys() {
@@ -18,19 +18,15 @@ export default function Storys() {
   console.log(windowSize);
   return (
     <>
-      {windowSize.current[0] < 1279 ? (
-        <ul className="flex flex-row  text-xs text-center mt-5 "></ul>
-      ) : (
-        <ul className="flex flex-row  text-xs text-center mt-5 ">
-          {EXAMPLE_STORIS.map((story) => {
-            return (
-              <li className={LI_MARGIN} key={story.name}>
-                <StoryBtn nickName={story.name} img={story.img} />
-              </li>
-            );
-          })}
-        </ul>
-      )}
+      <ul className="flex flex-row  text-xs text-center mt-5 sm:mx-0">
+        {EXAMPLE_STORIS.map((story) => {
+          return (
+            <li className={LI_MARGIN} key={story.name}>
+              <StoryBtn nickName={story.name} img={story.img} />
+            </li>
+          );
+        })}
+      </ul>
     </>
   );
 }
