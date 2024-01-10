@@ -1,6 +1,6 @@
 export default function MobileNavBar() {
   return (
-    <ul className="flex justify-evenly">
+    <ul className="sm:flex sm:justify-evenly sticky items-center bg-white h-12 bottom-0 w-screen z-10 hidden">
       <li>
         <button>
           <img src="home.svg" alt="" />
