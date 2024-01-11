@@ -8,8 +8,8 @@ const EXAMPLE_STORIS = [
   { name: "Pan_Tusk", img: "cat-story.jpeg" },
   { name: "Zabaw...", img: "cat-story.jpeg" },
   { name: "tururu", img: "cat-story.jpeg" },
-  // { name: "cing_cio...", img: "cat-story.jpeg" },
-  // { name: "rezi", img: "cat-story.jpeg" },
+  { name: "cing_cio...", img: "cat-story.jpeg" },
+  { name: "rezi", img: "cat-story.jpeg" },
   // { name: "user", img: "cat-story.jpeg" },
 ];
 
@@ -18,7 +18,7 @@ export default function Storys() {
   console.log(windowSize);
   return (
     <>
-      <ul className="flex flex-row  text-xs text-center mt-5 sm:mx-0">
+      <ul className="flex flex-row text-xs text-center mt-5 sm:mx-0 sm:w-11/12 overflow-x-auto ">
         {EXAMPLE_STORIS.map((story) => {
           return (
             <li className={LI_MARGIN} key={story.name}>
