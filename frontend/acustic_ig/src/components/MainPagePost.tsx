@@ -18,13 +18,13 @@ export default function MainPagePost({
   return (
     <div className="mb-5 xl:mt-6">
       <div className="flex mb-2 items-center">
-        <img className="rounded-full w-8 mr-2" src={op.img} alt="" />
+        <img className="rounded-full w-8 mr-2 sm:ml-1  " src={op.img} alt="" />
         <p className="mr-2 font-medium">{op.nickName}</p>
         <p>{postTime}</p>
         <button className="ml-auto">...</button>
       </div>
-      <img className="" src={photo} alt="" />
-      <div>
+      <img className="sm:w-screen sm:px-1" src={photo} alt="" />
+      <div className="sm:ml-1">
         <div className="mt-3">
           <button className="mr-3">
             <img src="blank-hearth.svg" alt="" />
