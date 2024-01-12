@@ -5,9 +5,15 @@ interface Props {
 
 export default function StoryBtn({ nickName, img }: Props) {
   return (
-    <button>
-      <img className="w-12 rounded-full" src={img} alt="profile picture" />
+    <button className="flex flex-col items-center justify-center">
+      <img
+        className="w-12 rounded-full sm:max-w-none"
+        src={img}
+        alt="profile picture"
+      />
       <p>{nickName}</p>
     </button>
   );
 }
+
+// naprawic to

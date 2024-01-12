@@ -1,14 +1,14 @@
 import StoryBtn from "../UI/StoryBtn";
 import { useRef } from "react";
 
-const LI_MARGIN = "mx-3 sm:mx-3 sm:w-96";
+const LI_MARGIN = "mx-3 sm:w-96 sm:text-base";
 const EXAMPLE_STORIS = [
   { name: "Kacper", img: "cat-story.jpeg" },
   { name: "Marek", img: "cat-story.jpeg" },
   { name: "Pan_Tusk", img: "cat-story.jpeg" },
   { name: "Zabaw...", img: "cat-story.jpeg" },
   { name: "tururu", img: "cat-story.jpeg" },
-  { name: "cing_cio...", img: "cat-story.jpeg" },
+  { name: "cing_ci.", img: "cat-story.jpeg" },
   { name: "rezi", img: "cat-story.jpeg" },
   // { name: "Pan_Tusk", img: "cat-story.jpeg" },
   // { name: "Zabaw...", img: "cat-story.jpeg" },
