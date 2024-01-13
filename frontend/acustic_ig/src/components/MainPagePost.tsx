@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 interface Props {
   op: { img: string; nickName: string };
   postTime: string;
@@ -15,6 +17,18 @@ export default function MainPagePost({
   likes,
   comments,
 }: Props) {
+  const [isClicked, setIsClicked] = useState(false);
+  const [likeCount, setLikeCount] = useState(likes);
+
+  function handleLikeClick() {
+    setIsClicked((curr) => !curr);
+    if (isClicked) {
+      setLikeCount((curr) => curr - 1);
+    } else {
+      setLikeCount((curr) => curr + 1);
+    }
+  }
+
   return (
     <div className="mb-5 xl:mt-6">
       <div className="flex mb-2 items-center">
@@ -26,14 +40,18 @@ export default function MainPagePost({
       <img className="sm:w-screen sm:px-1" src={photo} alt="" />
       <div className="sm:ml-1">
         <div className="mt-3">
-          <button className="mr-3">
-            <img src="like.svg" alt="" />
+          <button className="mr-3" onClick={handleLikeClick}>
+            {isClicked ? (
+              <img src="like-clicked.svg" />
+            ) : (
+              <img src="like.svg" />
+            )}
           </button>
           <button>
             <img src="comments.svg" alt="" />
           </button>
         </div>
-        <p className="font-medium">Liczba polubień: {likes}</p>
+        <p className="font-medium">Liczba polubień: {likeCount}</p>
         <p>
           <span className="font-medium">{op.nickName} </span>
           {description}
