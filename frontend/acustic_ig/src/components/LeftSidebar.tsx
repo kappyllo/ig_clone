@@ -1,7 +1,7 @@
 import LeftSideBarBtn from "../UI/LeftSideBarBtn";
 
 const LI_CLASSES =
-  "mb-2 hover:bg-slate-200 duration-500 pr-28 rounded py-3 h-10 pb-9";
+  "mb-2 hover:bg-slate-200 duration-500 rounded py-3 h-10 pb-9";
 
 export default function LeftSideBar() {
   return (
