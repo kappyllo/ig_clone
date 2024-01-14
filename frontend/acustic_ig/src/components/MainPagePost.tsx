@@ -35,7 +35,7 @@ export default function MainPagePost({
         <img className="rounded-full w-8 mr-2 sm:ml-1  " src={op.img} alt="" />
         <p className="mr-2 font-medium">{op.nickName}</p>
         <p>{postTime}</p>
-        <button className="ml-auto">...</button>
+        <button className="ml-auto mr-2 text-3xl mb-5">...</button>
       </div>
       <img className="sm:w-screen sm:px-1" src={photo} alt="" />
       <div className="sm:ml-1">
