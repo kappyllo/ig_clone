@@ -21,7 +21,7 @@ export default function Storys() {
   console.log(windowSize);
   return (
     <>
-      <ul className="flex flex-row text-xs text-center mt-5 sm:mx-0 sm:w-11/12 overflow-x-auto">
+      <ul className="flex flex-row text-xs text-center mt-14 sm:mx-0 sm:w-11/12 overflow-x-auto">
         {EXAMPLE_STORIS.map((story) => {
           return (
             <li className={LI_MARGIN} key={story.name}>

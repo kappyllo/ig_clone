@@ -8,7 +8,7 @@ export default function MobileNavBar() {
       </li>
       <li>
         <button>
-          <img src="explore.svg" alt="" />
+          <img src="search.svg" alt="" />
         </button>
       </li>
       <li>
@@ -23,7 +23,7 @@ export default function MobileNavBar() {
       </li>
       <li>
         <button>
-          <img className="rounded-full w-5 mr-2" src="cat-story.jpeg" alt="" />
+          <img className="rounded-full w-6 mr-2" src="cat-story.jpeg" alt="" />
         </button>
       </li>
     </ul>
