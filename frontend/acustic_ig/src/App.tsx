@@ -3,10 +3,12 @@ import RightSideBar from "./components/RightBar";
 import Storys from "./components/Storys";
 import LeftSideBar from "./components/LeftSidebar";
 import MobileNavBar from "./components/MobileNavBar";
+import MobileUpperNavBar from "./components/MobileUpperNavBar";
 
 function App() {
   return (
     <>
+      <MobileUpperNavBar />
       <LeftSideBar />
       <div className="flex justify-center ">
         <Storys />

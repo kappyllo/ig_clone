@@ -26,10 +26,10 @@ export default function LeftSideBar() {
               <LeftSideBarBtn text="Wiadomości" icon="messages.svg" />
             </li>
             <li className={LI_CLASSES}>
-              <LeftSideBarBtn text="Powiadomienia" icon="blank-hearth.svg" />
+              <LeftSideBarBtn text="Powiadomienia" icon="like.svg" />
             </li>
             <li className={LI_CLASSES}>
-              <LeftSideBarBtn text="Utwórz" icon="create.svg" />
+              <LeftSideBarBtn text="Utwórz" icon="create-mobile.svg" />
             </li>
             <li>
               <button className="flex items-center">
