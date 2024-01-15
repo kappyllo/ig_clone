@@ -8,7 +8,7 @@ export default function MobileNavBar() {
       </li>
       <li>
         <button>
-          <img src="explore.svg" alt="" />
+          <img src="search.svg" alt="" />
         </button>
       </li>
       <li>
