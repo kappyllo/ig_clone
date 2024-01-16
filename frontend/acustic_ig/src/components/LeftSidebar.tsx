@@ -7,7 +7,9 @@ export default function LeftSideBar() {
   return (
     <>
       <div className="mt-5 left-10 h-screen fixed xl:hidden">
-        <h1 className=" mb-16 pl-2">Acusgram</h1>
+        <h1 className="mb-12 mt-5 pl-2 text-xl">
+          <button onClick={() => window.scrollTo(0, 0)}>𝒜𝒸𝓊𝓈𝓉𝒾𝒸𝑔𝓇𝒶𝓂</button>
+        </h1>
         <div>
           <ul>
             <li className={LI_CLASSES}>
