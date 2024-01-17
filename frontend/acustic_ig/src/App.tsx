@@ -1,27 +1,14 @@
-import Posts from "./components/Posts";
-import RightSideBar from "./components/RightBar";
-import Storys from "./components/Storys";
-import LeftSideBar from "./components/LeftSidebar";
-import MobileNavBar from "./components/MobileNavBar";
-import MobileUpperNavBar from "./components/MobileUpperNavBar";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+
+const router = createBrowserRouter([
+  { path: "/", element: <HomePage /> },
+  { path: "login", element: <LoginPage /> },
+]);
 
 function App() {
-  return (
-    <>
-      <MobileUpperNavBar />
-      <LeftSideBar />
-      <div className="flex justify-center ">
-        <Storys />
-      </div>
-      <div className="flex">
-        <RightSideBar />
-      </div>
-      <div className="flex">
-        <Posts />
-      </div>
-      <MobileNavBar />
-    </>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
