@@ -1,4 +1,5 @@
 import LeftSideBarBtn from "../UI/LeftSideBarBtn";
+import { Link } from "react-router-dom";
 
 const LI_CLASSES =
   "mb-2 hover:bg-slate-200 duration-500 rounded py-3 h-10 pb-9";
@@ -13,7 +14,9 @@ export default function LeftSideBar() {
         <div>
           <ul>
             <li className={LI_CLASSES}>
-              <LeftSideBarBtn text="Strona główna" icon="home.svg" />
+              <Link to="/">
+                <LeftSideBarBtn text="Strona główna" icon="home.svg" />
+              </Link>
             </li>
             <li className={LI_CLASSES}>
               <LeftSideBarBtn text="Szukaj" icon="search.svg" />
