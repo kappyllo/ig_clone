@@ -22,7 +22,9 @@ export default function LoginPage() {
         <button className="bg-blue-400 text-white rounded font-semibold p-1">
           <Link to={"/"}>Log in</Link> {/* // to change later */}
         </button>
-        <p className="text-center">------ OR -------</p>
+        <p className="text-center mt-5 mb-5">
+          ━━━━━━━━━━━━━━ OR ━━━━━━━━━━━━━━
+        </p>
         <button className="text-blue-400 font-semibold">Register</button>
       </div>
     </div>
