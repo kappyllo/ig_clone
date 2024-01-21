@@ -37,14 +37,16 @@ export default function LeftSideBar() {
               <LeftSideBarBtn text="Utwórz" icon="create-mobile.svg" />
             </li>
             <li className={LI_CLASSES}>
-              <button className="flex items-center ">
-                <img
-                  className="rounded-full w-6 mr-2 ml-2 "
-                  src="cat-story.jpeg"
-                  alt=""
-                />
-                <p>Profil</p>
-              </button>
+              <Link to="/profile">
+                <button className="flex items-center ">
+                  <img
+                    className="rounded-full w-6 mr-2 ml-2 "
+                    src="cat-story.jpeg"
+                    alt=""
+                  />
+                  <p>Profil</p>
+                </button>
+              </Link>
             </li>
           </ul>
         </div>
