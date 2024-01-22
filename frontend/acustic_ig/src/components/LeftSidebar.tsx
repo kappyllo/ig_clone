@@ -7,7 +7,7 @@ const LI_CLASSES =
 export default function LeftSideBar() {
   return (
     <>
-      <div className="mt-5 left-10 h-screen fixed xl:hidden">
+      <div className="mt-5 left-10 h-screen fixed xl:hidden top-0">
         <h1 className="mb-12 mt-5 pl-2 text-xl">
           <button onClick={() => window.scrollTo(0, 0)}>𝒜𝒸𝓊𝓈𝓉𝒾𝒸𝑔𝓇𝒶𝓂</button>
         </h1>
