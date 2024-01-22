@@ -15,7 +15,7 @@ const FONT_BOLD = "font-semibold";
 
 export default function ProfileUpperSection() {
   return (
-    <div className="flex justify-center mt-10">
+    <div className="flex justify-center pt-10">
       <img
         src={EXAMPLE_PROFILE.profilePicture}
         className="rounded-full w-36 mr-20"
