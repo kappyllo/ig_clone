@@ -1,8 +1,10 @@
+import ProfilePhotoElement from "../UI/ProfilePhotoElement";
+
 const EXAMPLE_POSTS = [
-  { photo: "cat-story.jpeg" },
-  { photo: "cat-story.jpeg" },
-  { photo: "cat-story.jpeg" },
-  { photo: "cat-story.jpeg" },
+  { photo: "cat-story.jpeg", likes: 2, comments: 1 },
+  { photo: "cat-story.jpeg", likes: 6, comments: 0 },
+  { photo: "cat-story.jpeg", likes: 12, comments: 12 },
+  { photo: "cat-story.jpeg", likes: 1, comments: 4 },
 ];
 
 export default function ProfilePhotos() {
@@ -13,7 +15,11 @@ export default function ProfilePhotos() {
           return (
             <li>
               <button>
-                <img className="w-56" src={post.photo} alt="" />
+                <ProfilePhotoElement
+                  image={post.photo}
+                  likes={post.likes}
+                  comments={post.comments}
+                />
               </button>
             </li>
           );
