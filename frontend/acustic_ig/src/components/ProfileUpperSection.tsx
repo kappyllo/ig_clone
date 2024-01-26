@@ -13,15 +13,17 @@ const EXAMPLE_PROFILE = {
 const INFO_STYLE = "";
 const FONT_BOLD = "font-semibold";
 
+// ogarnac zeby photo bylo na roznych skokach inne a nie tylko jeden skok. I odstepy tak samo.
+
 export default function ProfileUpperSection() {
   return (
     <div className="flex justify-center pt-10">
       <img
         src={EXAMPLE_PROFILE.profilePicture}
-        className="rounded-full w-36 mr-20"
+        className="rounded-full w-36 mr-20 xl:mr-0 xl:w-24 xl:h-24"
         alt=""
       />
-      <div>
+      <div className="xl:ml-2">
         <div className="flex justify-between mb-5">
           <p className="text-xl">{EXAMPLE_PROFILE.nickName}</p>
           <button>

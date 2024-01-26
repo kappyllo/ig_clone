@@ -19,5 +19,3 @@ export default function ProfilePhotoElement({ image, likes, comments }: Props) {
     </div>
   );
 }
-
-// trzeba ikony nowe zrobic z bialym tlem.
