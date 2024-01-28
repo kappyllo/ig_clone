@@ -30,7 +30,7 @@ export default function ProfileUpperSection() {
             <img src="settings.svg" alt="" />
           </button>
         </div>
-        <div className="flex justify-between w-72">
+        <div className="flex justify-between w-72 xl:w-64">
           <p className={INFO_STYLE}>
             Posts:{" "}
             <span className={FONT_BOLD}>{EXAMPLE_PROFILE.posts.count}</span>
