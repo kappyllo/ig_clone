@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
+
 export default function MobileNavBar() {
   return (
     <ul className="xl:flex justify-evenly fixed items-center bg-white h-12 bottom-0 w-screen z-10 hidden">
       <li>
         <button>
-          <img src="home.svg" alt="" />
+          <Link to={"/"}>
+            <img src="home.svg" alt="" />
+          </Link>
         </button>
       </li>
       <li>
@@ -23,7 +27,13 @@ export default function MobileNavBar() {
       </li>
       <li>
         <button>
-          <img className="rounded-full w-6 mr-2" src="cat-story.jpeg" alt="" />
+          <Link to={"/profile"}>
+            <img
+              className="rounded-full w-6 mr-2"
+              src="cat-story.jpeg"
+              alt=""
+            />
+          </Link>
         </button>
       </li>
     </ul>
