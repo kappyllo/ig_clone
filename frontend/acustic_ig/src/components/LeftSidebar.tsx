@@ -31,7 +31,9 @@ export default function LeftSideBar() {
               <LeftSideBarBtn text="Wiadomości" icon="messages.svg" />
             </li>
             <li className={LI_CLASSES}>
-              <LeftSideBarBtn text="Powiadomienia" icon="like.svg" />
+              <Link to="/notifications">
+                <LeftSideBarBtn text="Powiadomienia" icon="like.svg" />
+              </Link>
             </li>
             <li className={LI_CLASSES}>
               <LeftSideBarBtn text="Utwórz" icon="create-mobile.svg" />
