@@ -1,5 +1,6 @@
 import NotificationElement from "../UI/NotificationElement";
 import LeftSideBar from "../components/LeftSidebar";
+import MobileNavBar from "../components/MobileNavBar";
 
 const EXAMPLE_NOTIF = [
   {
@@ -32,6 +33,7 @@ export default function NotificationPage() {
           />
         ))}
       </div>
+      <MobileNavBar />
     </>
   );
 }

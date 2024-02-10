@@ -12,7 +12,9 @@ export default function MobileNavBar() {
       </li>
       <li>
         <button>
-          <img src="search.svg" alt="" />
+          <Link to={"/notifications"}>
+            <img src="like.svg" alt="" />
+          </Link>
         </button>
       </li>
       <li>
