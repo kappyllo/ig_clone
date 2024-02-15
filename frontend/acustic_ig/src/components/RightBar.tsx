@@ -12,7 +12,7 @@ export default function RightSideBar() {
           <p className="text-sm">{ACOUNT_DESC}</p>
         </div>
         <button className="text-blue-700 font-semibold text-sm">
-          <Link to={"/login"}>Przęłącz</Link>
+          <Link to={"/login"}>Przełącz</Link>
         </button>
       </div>
     </div>
