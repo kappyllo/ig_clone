@@ -4,8 +4,13 @@ import Storys from "../components/Storys";
 import LeftSideBar from "../components/LeftSidebar";
 import MobileNavBar from "../components/MobileNavBar";
 import MobileUpperNavBar from "../components/MobileUpperNavBar";
+import { useSelector } from "react-redux";
 
 export default function HomePage() {
+  const test = useSelector((state) => state.logged); // tylko do testu
+
+  console.log(test);
+
   return (
     <>
       <MobileUpperNavBar />

@@ -1,14 +1,23 @@
-import { Link } from "react-router-dom";
 import useLogin from "../hooks/useLogin";
 import { useRef } from "react";
+import { useSelector } from "react-redux";
 
 export default function LoginPage() {
-  const loginRef = useRef("");
-  const pwdRef = useRef("");
+  const loginRef = useRef<HTMLInputElement>(null);
+  const pwdRef = useRef<HTMLInputElement>(null);
+
+  const [requestFn, data] = useLogin();
 
   function handleLogin() {
-    useLogin(loginRef.current.value, pwdRef.current.value);
+    const login = loginRef.current?.value;
+    const pwd = pwdRef.current?.value;
+    requestFn(login!, pwd!);
+    console.log(data);
   }
+
+  const test = useSelector((state) => state.logged); // to tylko do testu jest
+
+  console.log(test);
 
   return (
     <div className="flex flex-col justify-center h-screen items-center">
@@ -30,7 +39,6 @@ export default function LoginPage() {
           onClick={handleLogin}
           className="bg-blue-400 text-white rounded font-semibold p-1"
         >
-          {/* <Link to={"/"}>Log in</Link> // to change later */}
           Log in
         </button>
         <p className="text-center mt-5 mb-5">

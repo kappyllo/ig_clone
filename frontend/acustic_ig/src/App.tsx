@@ -6,7 +6,7 @@ import NotificationPage from "./pages/NotificationPage";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
-  { path: "login", element: <LoginPage /> },
+  { path: "/login", element: <LoginPage /> },
   { path: "/profile", element: <ProfilePage /> },
   { path: "/notifications", element: <NotificationPage /> },
 ]);
