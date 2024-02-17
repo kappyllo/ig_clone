@@ -7,7 +7,7 @@ interface actionType {
 }
 
 const loginReducer = (
-  state = { logged: "no", name: "" },
+  state = { logged: "no", payload: "" },
   action: actionType
 ) => {
   if (action.type === "login") {

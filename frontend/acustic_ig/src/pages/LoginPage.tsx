@@ -1,6 +1,5 @@
 import useLogin from "../hooks/useLogin";
 import { useRef } from "react";
-import { useSelector } from "react-redux";
 
 export default function LoginPage() {
   const loginRef = useRef<HTMLInputElement>(null);
@@ -14,10 +13,6 @@ export default function LoginPage() {
     requestFn(login!, pwd!);
     console.log(data);
   }
-
-  const test = useSelector((state) => state.logged); // to tylko do testu jest
-
-  console.log(test);
 
   return (
     <div className="flex flex-col justify-center h-screen items-center">

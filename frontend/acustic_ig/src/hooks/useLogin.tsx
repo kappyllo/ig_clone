@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+
 const API_URL = import.meta.env.VITE_API_URL;
-console.log(API_URL);
 
 export default function useLogin() {
   const dispatch = useDispatch();
-  function loginDispatch() {
-    dispatch({ type: "login", name: "kacper" }); // zmienic zeby dawalo na zmienna imie a nie kacper.
+  function loginDispatch(userName: string) {
+    dispatch({ type: "login", payload: userName });
   }
 
   const [data, setData] = useState("t");
@@ -24,13 +24,16 @@ export default function useLogin() {
         headers: {
           "Content-Type": "application/json",
         },
+        credentials: "include",
       });
       const data = await response.json();
       console.log(data);
 
       if (data.status === "success") {
-        loginDispatch();
-        navigate("/");
+        const cookie = response.headers.get("set-cookie");
+        console.log(cookie);
+        // loginDispatch(login);
+        // navigate("/");
       } else {
         setData("Error");
       }
