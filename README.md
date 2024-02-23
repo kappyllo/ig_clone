@@ -1,2 +1,2 @@
 # acustic_ig
-Cooperative instagram clone to warm up, with help of React and WordPress.
+Cooperative instagram clone to warm up, with help of React and PHP
