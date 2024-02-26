@@ -14,7 +14,7 @@ const loginReducer = (
     return {
       ...state,
       logged: "yes",
-      name: action.payload,
+      user: action.payload,
     };
   }
 
@@ -22,7 +22,7 @@ const loginReducer = (
     return {
       ...state,
       logged: "no",
-      name: "",
+      user: "",
     };
   }
 

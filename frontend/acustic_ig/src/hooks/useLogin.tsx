@@ -15,7 +15,7 @@ export default function useLogin() {
 
   function request(login: string, password: string) {
     async function fetchData() {
-      const response = await fetch(API_URL, {
+      const response = await fetch(`${API_URL}login`, {
         body: JSON.stringify({
           email: login,
           password: password,
@@ -30,10 +30,10 @@ export default function useLogin() {
       console.log(data);
 
       if (data.status === "success") {
-        const cookie = response.headers.get("set-cookie");
-        console.log(cookie);
-        // loginDispatch(login);
-        // navigate("/");
+        const cookie = getCookie("user");
+        const user = JSON.parse(cookie!);
+        loginDispatch(user);
+        navigate("/");
       } else {
         setData("Error");
       }
@@ -42,4 +42,15 @@ export default function useLogin() {
   }
 
   return [request, data] as const;
+}
+
+function getCookie(cName: string) {
+  const name = cName + "=";
+  const cDecoded = decodeURIComponent(document.cookie); //to be careful
+  const cArr = cDecoded.split("; ");
+  let res;
+  cArr.forEach((val) => {
+    if (val.indexOf(name) === 0) res = val.substring(name.length);
+  });
+  return res;
 }
