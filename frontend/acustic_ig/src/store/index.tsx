@@ -23,6 +23,14 @@ const loginReducer = (
       ...state,
       logged: "no",
       user: "",
+      homePosts: "",
+    };
+  }
+
+  if (action.type === "getPosts") {
+    return {
+      ...state,
+      homePosts: action.payload,
     };
   }
 

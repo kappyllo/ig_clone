@@ -21,7 +21,11 @@ abstract class Model {
    * @return array
    */
   public function getAll(): array {
+<<<<<<< HEAD
     $query = new Query("SELECT * FROM $this->resourceName", [], ['paginate']);
+=======
+    $query = new Query("SELECT * FROM $this->resourceName");
+>>>>>>> working
 
     return $query->getResults();
   }

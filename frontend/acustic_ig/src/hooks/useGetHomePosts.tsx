@@ -12,11 +12,12 @@ export default function useGetHomePosts() {
   //   const userId = user.id;
 
   const [data, setData] = useState();
+  const [isLoading, setIsLoading] = useState(true);
 
   async function fetchData() {
+    setIsLoading(true);
     const response = await fetch(`${API_URL}posts?page=3`, {
       method: "GET",
-      //   credentials: "include",
     });
     const data = await response.json();
     const posts = await data.data;
@@ -24,9 +25,12 @@ export default function useGetHomePosts() {
   }
   useEffect(() => {
     fetchData();
+    setIsLoading(false);
   }, []);
 
-  return data;
+  console.log(data);
+
+  return [data, isLoading];
 }
 
 // `${API_URL}users/${userId}/followed/posts`

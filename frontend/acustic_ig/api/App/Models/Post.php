@@ -12,6 +12,24 @@ class Post extends Model {
     parent::__construct("posts");
   }
 
+<<<<<<< HEAD
+=======
+  public function getAll(): array {
+    $queryString = "
+      SELECT posts.id, description, json_build_array(media_ids) AS media_ids, posts.created_at, posts.updated_at,
+             json_build_object('id', users.id, 'profile_pic', profile_pic, 'tag', tag, 'name', name) AS user
+      FROM posts
+      JOIN users
+      ON posts.user_id = users.id
+    ";
+    $query = new Query($queryString);
+    $query->decodeJSONFields("media_ids")->populate("media", "media_ids", "uri", "media_uri");
+    $query->decodeJSONFields("user");
+
+    return $query->getResults();
+  }
+
+>>>>>>> working
   /**
    * Get all posts from users who the user follows
    *
