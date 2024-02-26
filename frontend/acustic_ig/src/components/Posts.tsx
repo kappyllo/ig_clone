@@ -1,4 +1,5 @@
 import MainPagePost from "./MainPagePost";
+import useGetHomePosts from "../hooks/useGetHomePosts";
 
 const EXAMPLE_POSTS = [
   {
@@ -28,6 +29,8 @@ const EXAMPLE_POSTS = [
 ];
 
 export default function Posts() {
+  const ALL_POSTS = useGetHomePosts();
+
   return (
     <div className="flex flex-col justify-center mx-auto">
       {EXAMPLE_POSTS.map((post) => {

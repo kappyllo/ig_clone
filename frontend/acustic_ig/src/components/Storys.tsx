@@ -18,7 +18,7 @@ const EXAMPLE_STORIS = [
 
 export default function Storys() {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
-  console.log(windowSize);
+
   return (
     <>
       <ul className="flex flex-row text-xs text-center mt-14 sm:mx-0 sm:w-11/12 overflow-x-auto">
