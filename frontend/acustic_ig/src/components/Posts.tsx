@@ -1,47 +1,24 @@
+import { useSelector } from "react-redux";
 import MainPagePost from "./MainPagePost";
-import useGetHomePosts from "../hooks/useGetHomePosts";
-
-const EXAMPLE_POSTS = [
-  {
-    op: { nickName: "Kacper", img: "cat-story.jpeg" },
-    postTime: "12 godz.",
-    description: "ciekawy opis",
-    likes: 2,
-    comments: { count: 1, comms: ["test"] },
-    photo: "src/imgs/post_img.jpg",
-  },
-  {
-    op: { nickName: "Kacper", img: "cat-story.jpeg" },
-    postTime: "12 godz.",
-    description: "ciekawy opis",
-    likes: 2,
-    comments: { count: 1, comms: ["test"] },
-    photo: "src/imgs/post_img.jpg",
-  },
-  {
-    op: { nickName: "Kacper", img: "cat-story.jpeg" },
-    postTime: "12 godz.",
-    description: "ciekawy opis",
-    likes: 2,
-    comments: { count: 1, comms: ["test"] },
-    photo: "src/imgs/post_img.jpg",
-  },
-];
+import { combineReducers } from "@reduxjs/toolkit";
+const rootReducer = combineReducers({});
+export type IRootState = ReturnType<typeof rootReducer>;
 
 export default function Posts() {
-  const ALL_POSTS = useGetHomePosts();
+  const ALL_POSTS = useSelector((state: IRootState) => state.homePosts);
 
+  const comms = { count: 1, comms: ["test"] };
   return (
     <div className="flex flex-col justify-center mx-auto">
-      {EXAMPLE_POSTS.map((post) => {
+      {ALL_POSTS!.map((post: any) => {
         return (
           <MainPagePost
-            op={post.op}
-            postTime={post.postTime}
+            op={post.user}
+            postTime="12 godz."
             description={post.description}
-            likes={post.likes}
-            comments={post.comments}
-            photo={post.photo}
+            likes={2}
+            comments={comms}
+            photo={post.media_uri}
           />
         );
       })}

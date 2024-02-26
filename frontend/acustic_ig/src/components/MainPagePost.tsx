@@ -32,8 +32,12 @@ export default function MainPagePost({
   return (
     <div className="mb-5 xl:mt-6">
       <div className="flex mb-2 items-center">
-        <img className="rounded-full w-8 mr-2 sm:ml-1  " src={op.img} alt="" />
-        <p className="mr-2 font-medium">{op.nickName}</p>
+        <img
+          className="rounded-full w-8 mr-2 sm:ml-1  "
+          src={op.profile_pic}
+          alt=""
+        />
+        <p className="mr-2 font-medium">{op.tag}</p>
         <p>{postTime}</p>
         <button className="ml-auto mr-2 text-3xl mb-5">...</button>
       </div>
@@ -53,7 +57,7 @@ export default function MainPagePost({
         </div>
         <p className="font-medium">Liczba polubień: {likeCount}</p>
         <p>
-          <span className="font-medium">{op.nickName} </span>
+          <span className="font-medium">{op.tag} </span>
           {description}
         </p>
         <button>Zobacz wszystkie komentarze: {comments.count}</button>

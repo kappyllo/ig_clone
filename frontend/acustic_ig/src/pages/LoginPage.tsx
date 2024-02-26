@@ -1,17 +1,29 @@
+import { act } from "react-dom/test-utils";
+import useGetHomePosts from "../hooks/useGetHomePosts";
 import useLogin from "../hooks/useLogin";
 import { useRef } from "react";
+import { UseDispatch, useDispatch } from "react-redux";
 
 export default function LoginPage() {
   const loginRef = useRef<HTMLInputElement>(null);
   const pwdRef = useRef<HTMLInputElement>(null);
+  const dispatch = useDispatch();
 
   const [requestFn, data] = useLogin();
+
+  const [allPosts, isLoading] = useGetHomePosts();
 
   function handleLogin() {
     const login = loginRef.current?.value;
     const pwd = pwdRef.current?.value;
+    handleGetPosts();
     requestFn(login!, pwd!);
-    console.log(data);
+  }
+
+  function handleGetPosts() {
+    if (isLoading == false) {
+      dispatch({ type: "getPosts", payload: allPosts });
+    }
   }
 
   return (
